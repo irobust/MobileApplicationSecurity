@@ -1,5 +1,12 @@
 # Mobile Application Security
-รวมคำสั่งต่างๆ ที่ใช้สำหรับการทำ Mobile Pen-Test
+รวมเอกสารและคำสั่งต่างๆ ที่ใช้สำหรับการทำ Mobile Pen-Test
+
+## เอกสารที่เกี่ยวข้อง
+* https://mas.owasp.org
+* https://mas.owasp.org/MASVS/
+* https://mas.owasp.org/MASTG/
+* https://mas.owasp.org/checklists/
+* https://cheatsheetseries.owasp.org/cheatsheets/Mobile_Application_Security_Cheat_Sheet.html
 
 ## Connect to Devices
 1. Install ADB Wifi
