@@ -80,6 +80,9 @@ Insecure Data Storage – Part 3
 - dz> run app.provider.query content://jakhar.aseem.diva.provider.notesprovider/notes --vertical
 - dz> run app.provider.query content://jakhar.aseem.diva.provider.notesprovider/notes --selection "_id=3"
 - dz> run app.provider.query content://jakhar.aseem.diva.provider.notesprovider/notes --projection "title,note"
+- dz> run scanner.provider.injection -a jakhar.aseem.diva
+- dz> run scanner.provider.sqltables -a jakhar.aseem.diva
+- dz> run scanner.provider.traversal -a jakhar.aseem.diva
 
 ## Tools for Static Analysis
 - Androwarn (for Android)
